@@ -26,118 +26,150 @@
     margin: 8px 0;
   }
 
-  
-  .example-spacer {
-  flex: 1 1 auto;
-}
-
-.example-container {
- width: 100%;
-position: absolute;
-top: 0px;
-bottom: 0px;
-left: 0px;
-  /* border: 1px solid #555; */
-}
+  .example-container {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* border: 1px solid #555; */
+  }
 
 
-.example-sidenav-content {
-  display: flex;
-  height: 100%;
-  width: 100px;
-  align-items: center;
-  justify-content: center;
-}
-.side-nav-style{
-  width: 240px;
-  background-color: rgb(77, 87, 220);
-  padding: 15px;
-  color: white;
-}
-.app-name{
-  font-size: 20px;
-  font-weight: 600;
-  margin-left: 5px;
-}
-.side-nav-buttons{
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  align-items: center;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;       
-  color: rgb(190, 185, 185);
-  cursor: pointer;
-  justify-content: flex-start;
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .side-nav-style {
+    width: 240px;
+    background-color: rgb(59, 88, 255);
+    padding: 15px;
+    color: white;
+  }
+
+  .app-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .side-nav-buttons {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: rgb(240, 231, 231);
+    cursor: pointer;
+    justify-content: flex-start;
+
+  }
 
 
-}
-.side-nav-buttons:hover {
-  background-color: rgb(77, 77, 157);
-}
-.application-header{
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  padding: 10px 0 15px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-}
-.Application-sector-heading{
- /* padding: 10px 0; */
- border-top: 1px solid rgb(203, 203, 203);
- border-bottom: 1px solid rgb(203, 203, 203);
- font-size: 14px;
- text-transform: uppercase;
- font-weight: 600;
- color: white;
- text-align: center;
- display: flex;
- height: 50px;
- justify-content: space-between;
- align-items: center;
- 
-}
-.header-icon-style{
+  /* .side-nav-buttons:hover {
+    background-color: rgb(77, 77, 157);
+  } */
 
-  font-size: 13px;
-  line-height: 22px;
+  .application-header {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 10px 0 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .Application-sector-heading {
+    /* padding: 10px 0; */
+    border-top: 1px solid rgb(190, 185, 185);
+    border-bottom: 1px solid rgb(190, 185, 185);
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  .header-icon-style {
+
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .section-header {
+    color: rgb(197, 200, 203);
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .nav-icons {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .toolbar-styles {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+  }
+  ::ng-deep .toolbar-content{
+border-bottom-left-radius: 0px !important;
+border-bottom-right-radius: 0px !important;
 }
-.section-header{
-  color: rgb(197, 200, 203);
-  padding: 10px 0;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 600;
-}
-.nav-icons{
-  font-size: 14px;
-  line-height: 22px;
-}
-.toolbar-styles{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  height: 50px;
-  width: 100%;
-}
-.toolbar-content{
+  .toolbar-content {
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+  }
+
+  .toolbar-content span {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .menu-content {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+  }
+  .inner-container{
+    display: block;
+    overflow: hidden;
+  }
+  .profile-card{
+margin-left: 5px;
+height: 50px;
 display: flex;
-justify-content: flex-end;
-}
-.toolbar-content span{
-  font-size: 13px;
-  font-weight: 500;
-}
-.menu-content{
-  position: absolute;
-  top: 50px;
-  width: 100%;
-}
+justify-content: center;
+align-items: center;
+  }
+  .profile-block{
+    display: flex;
+    align-items: center;
+  }
+  .profile-styles{
+    font-size: 25px;
+  }
 </style>
 <div>
 
@@ -151,35 +183,38 @@ justify-content: flex-end;
         <div class="Application-sector-heading">
           <mat-icon class="header-icon-style">extension</mat-icon>
           <span>
-          Investment yeild Basket
-        </span>
+            Investment yeild Basket
+          </span>
         </div>
         <div class="section-header">
           Interface
         </div>
-        <div class="side-nav-buttons"  routerLink="/data-contribution">
+        <div class="side-nav-buttons" routerLink="/data-contribution">
           <mat-icon class="nav-icons">settings</mat-icon>
-          <span
-             >
+          <span>
             Data Contributors
-         </span>
+          </span>
         </div>
         <div class="side-nav-buttons" routerLink="/baskets">
-          <mat-icon class="nav-icons">settings</mat-icon>
+          <mat-icon class="nav-icons">build</mat-icon>
           <span>
             Baskets
           </span>
         </div>
       </mat-drawer>
-      <mat-drawer-content>
+      <mat-drawer-content class="inner-container">
         <div class="toolbar-styles">
-          <mat-toolbar class="toolbar-content">
-            <div>
+          <mat-card class="toolbar-content">
+            <div class="profile-block">
+              
               <span>Leena</span>
-
-
+              <div class="profile-card">
+                <mat-icon class="profile-styles">account_circle</mat-icon>
+              </div>
+    
+    
             </div>
-          </mat-toolbar>
+          </mat-card>
         </div>
         <div class="menu-content">
           <router-outlet></router-outlet>
@@ -189,8 +224,8 @@ justify-content: flex-end;
 
       </mat-drawer-content>
     </mat-drawer-container>
-    
-  
-  
-</div>
+
+
+
+  </div>
 </div>

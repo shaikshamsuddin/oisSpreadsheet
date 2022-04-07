@@ -17,12 +17,26 @@ width: 100%;
   border-radius: 10px;
 }
 .progress-bar ::ng-deep .mat-progress-bar-fill::after{
-  background-color: rgb(236, 33, 111);
+  background-color: rgb(194, 9, 80);
 }
 .progress-bar ::ng-deep .mat-progress-bar-buffer::after{
   background-color: white;
 }
 .progress-bar ::ng-deep .mat-progress-bar{
+  border-radius: 5px;
+}
+
+.completed-progress{
+  height: 15px;
+  border-radius: 10px;
+}
+.completed-progress ::ng-deep .mat-progress-bar-fill::after{
+  background-color: rgb(33, 236, 63);
+}
+.completed-progress ::ng-deep .mat-progress-bar-buffer::after{
+  background-color: white;
+}
+.completed-progress ::ng-deep .mat-progress-bar{
   border-radius: 5px;
 }
 
@@ -218,4 +232,27 @@ font-family: nhg-display-light, Arial, Helvetica, sans-serif;
 }
 .agency-block{
   margin-bottom: 15px;
+}
+
+ .mat-form-field-appearance-fill .mat-form-field-flex {
+  border-radius:0 !important; 
+   padding: 0.75em 0.75em 0 0.75em;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: white !important;
+} 
+
+
+.example-form input {
+  width: 100%;
+  border: 1px solid rgb(213, 201, 201);
+  border-radius: 50px;
+  height: 40px;
+  padding:0 10px;
+  margin-bottom: 10px;
+}
+.mat-card-section-style{
+  overflow-y: auto;
+  height: 500px;
 }

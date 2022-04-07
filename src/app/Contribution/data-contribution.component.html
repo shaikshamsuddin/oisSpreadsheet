@@ -67,7 +67,7 @@
                   {{value.percentage}}%
                 </span>
               </div>
-              <mat-progress-bar class="progress-bar" mode="determinate" value={{value.percentage}}></mat-progress-bar>
+              <mat-progress-bar  [ngClass]=" value.percentage == 100 ? 'completed-progress' : 'progress-bar'"  mode="determinate" value={{value.percentage}}></mat-progress-bar>
             </div>
   
           </div>
@@ -83,24 +83,28 @@
     
               <mat-card-content class="mat-card-content-section-style">
                 <div class="agency-container">
-                  <div class="agency-block"  *ngFor="let yields of agencyYields">
-                  <div class="agency-input">
-                    <span>
-                      {{yields.year}} Year
-                    </span>
-  
-                  </div>
+                  <form class="example-form">
+                      <input type="number" matInput 
+                             placeholder="5 Year">
+
+                             <input type="number" matInput 
+                             placeholder="10 Year">
+                             <input type="number" matInput 
+                             placeholder="15 Year">
+                             <input type="number" matInput 
+                             placeholder="20 Year">
+
+                  </form>
                 </div>
-                </div>
+                <div class="button-div">
+                  <button mat-raised-button type="submit" color="primary">Submit</button>
+                  <button mat-raised-button color="secondary" (click)="close()">Close</button>
       
+                </div>
             </mat-card-content>
             </mat-card>
             </div>
-            <div class="button-div">
-              <button mat-raised-button type="submit" color="primary">Submit</button>
-              <button mat-raised-button color="secondary" (click)="close()">Close</button>
-  
-            </div>
+            
   </div>
   
         </div>

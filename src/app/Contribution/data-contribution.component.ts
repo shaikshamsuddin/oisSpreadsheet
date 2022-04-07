@@ -9,11 +9,11 @@ export class DataContributionComponent implements OnInit {
   isShow = false;
 
   public progress: Array<any> = [
-    { title: "NYLIM1", percentage: "50" },
-    { title: "NYLIM2", percentage: "100" },
-    { title: "NYLIM3", percentage: "75" },
-    { title: "NYLIM4", percentage: "80 " },
-    { title: "NYLIM5", percentage: "50" },
+    { title: "Mackay Screens Contribution", percentage: "50" },
+    { title: "Agencies Yields", percentage: "100" },
+    { title: "Agency CMBS", percentage: "75" },
+    { title: "Bank Loans", percentage: "80 " },
+    { title: "CDS", percentage: "50" },
     { title: "NYLIM6", percentage: "100" },
     { title: "NYLIM7", percentage: "75" },
     { title: "NYLIM8", percentage: "80 " },
